@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - Shagun Mart</title>
+    <meta name="description" content="Browse our wide range of products including groceries, stationery, cosmetics, dry fruits, gift packs, and household items at Shagun Mart.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional-styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#FF3366">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg class="logo" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <path d="M25 0C11.2 0 0 11.2 0 25C0 38.8 11.2 50 25 50C38.8 50 50 38.8 50 25C50 11.2 38.8 0 25 0ZM25 45C13.95 45 5 36.05 5 25C5 13.95 13.95 5 25 5C36.05 5 45 13.95 45 25C45 36.05 36.05 45 25 45Z" fill="#E30613"/>
+                <path d="M35 17.5H15C13.62 17.5 12.5 18.62 12.5 20V30C12.5 31.38 13.62 32.5 15 32.5H35C36.38 32.5 37.5 31.38 37.5 30V20C37.5 18.62 36.38 17.5 35 17.5ZM33.75 27.5H16.25C15.56 27.5 15 26.94 15 26.25V23.75C15 23.06 15.56 22.5 16.25 22.5H33.75C34.44 22.5 35 23.06 35 23.75V26.25C35 26.94 34.44 27.5 33.75 27.5Z" fill="#E30613"/>
+            </svg>
+            <h1>Shagun Mart</h1>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="catalog.html" class="nav__link active">Product Catalog</a></li>
+                <li class="nav__item"><a href="offers.html" class="nav__link">Offers</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="catalog-hero__content">
+                <h2>Our Product Catalog</h2>
+                <p class="subtitle">Browse our wide range of quality products</p>
+                <p class="delivery-note">Free home delivery on orders above ₹1000</p>
+            </div>
+        </section>
+
+        <section class="catalog-nav">
+            <div class="catalog-filters">
+                <button class="filter-btn active" data-filter="all">All Categories</button>
+                <button class="filter-btn" data-filter="grocery">Grocery</button>
+                <button class="filter-btn" data-filter="stationery">Stationery</button>
+                <button class="filter-btn" data-filter="cosmetics">Cosmetics</button>
+                <button class="filter-btn" data-filter="dryfruits">Dry Fruits</button>
+                <button class="filter-btn" data-filter="household">Household</button>
+            </div>
+        </section>
+
+        <section id="grocery" class="product-category">
+            <div class="category-header">
+                <svg class="category-icon" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 6H5H21" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 11V17" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 11V17" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>Grocery</h3>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="grocery">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g46b8c0ad57ce151e5b5c7f7c906cd4e3a00469c0d9bfa4865e88ef258dba78c7d602fbb4e7c6f53d3e14a5358075e4d3773eef2532dcd3af0f66bdc42359f533_1280.jpg" alt="Grocery Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Rice & Grains</h4>
+                        <p class="price-range">₹60 - ₹200 per kg</p>
+                        <p class="product-description">Premium quality rice and grains including Basmati, Brown Rice, and specialty grains.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Rice%20%26%20Grains%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="grocery">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/ge4c47b4368abb5d6b9e3b2862365d7e3ec55162d490a097e8bd1bf268fd5f4af81185c6f14b18d0808a0badc443a893363e902ae63651b51ac2827cae7c3cf8d_1280.jpg" alt="Grocery Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Pulses & Lentils</h4>
+                        <p class="price-range">₹80 - ₹180 per kg</p>
+                        <p class="product-description">Various types of pulses and lentils including Chana Dal, Moong Dal, Masoor Dal, and more.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Pulses%20%26%20Lentils%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="grocery">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g38363d00a782cb29c90c975626e10552276ec2e024455d1782fc07505fe52d057fcf17e590ad1074d83fc3a5eeac45ad52d9896a68633c99301e1d035287239e_1280.jpg" alt="Grocery Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Cooking Oils</h4>
+                        <p class="price-range">₹120 - ₹250 per liter</p>
+                        <p class="product-description">Variety of cooking oils including Mustard, Sunflower, Rice Bran, and Olive oil.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Cooking%20Oils%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stationery" class="product-category">
+            <div class="category-header">
+                <svg class="category-icon" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 2V8H20" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 13H16" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 17H16" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 9H12" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>Stationery</h3>
+            </div>
+            <div class="product-grid">
+                <div class="product-card glass-card animate-on-scroll" data-category="stationery">
+                    <div class="product-price">₹40 - ₹150</div>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g3717aded1d1ad533ec8631ffdf5938f559dce1db8716e38a6b7165b9c4117e5e7666c4ecbe84297a34207e7fd902c8a3ca52d8fdc80522e0fee3c55ca57be0a3_1280.jpg" alt="Notebooks & Journals" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Notebooks & Journals</h4>
+                        <p class="price-range">₹40 - ₹150</p>
+                        <p class="product-description">Various notebooks, journals, and diaries for school, college, and office use.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Notebooks%20%26%20Journals%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card glass-card animate-on-scroll" data-category="stationery">
+                    <div class="product-price">₹50 - ₹200</div>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g371241a9eca22da74d99b9afda82f0e53e6dfaf3d20c4faa84e6db73b0c6e6380ead30dfa2c5b66ae54f09f54fab5f75dd94b42a5d29b05b84bcddd70d0d0af3_1280.jpg" alt="Pens & Pencils" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Pens & Pencils</h4>
+                        <p class="price-range">₹50 - ₹200</p>
+                        <p class="product-description">Quality pens, pencils, and writing instruments from leading brands.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Pens%20%26%20Pencils%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card glass-card animate-on-scroll" data-category="stationery">
+                    <div class="product-price">₹80 - ₹350</div>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g4e82f9c2d7d9f6c9eb70ce6d1dda339eee9baa5a90f00aa5cd9e7fa71f8c12fd73cc9e44be19bddbc5d2aa0c89f35ac9fcbcb3f2fd5d2aea2ff7de15bd2c6dba_1280.jpg" alt="Art Supplies" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Art Supplies</h4>
+                        <p class="price-range">₹80 - ₹350</p>
+                        <p class="product-description">Complete range of art supplies including colors, sketching materials, and craft items.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Art%20Supplies%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="stationery">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/ge239a5e5a00776b52f1e5e41931aa16d04d0c4b91bc870cd9e78a7f6c17428cf7dc50d5959c98abc9b7df26298cb3df7bcdca5479c5dc08eecbfabd6b0477515_1280.jpg" alt="Stationery Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Pens & Pencils</h4>
+                        <p class="price-range">₹10 - ₹100</p>
+                        <p class="product-description">Quality pens, pencils, markers, and highlighters from trusted brands.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Pens%20%26%20Pencils%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="stationery">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g40e5288afb6b76023ebd01a1b049fd7fc59812e30c1afeaf70a87a3b2626855d90445cdec7b246c305834522ed554fd4ebbb296079174ab9a7e5a40c0c6ccba2_1280.jpg" alt="Stationery Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Office Supplies</h4>
+                        <p class="price-range">₹20 - ₹500</p>
+                        <p class="product-description">Complete range of office supplies including folders, staplers, paper clips, and more.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Office%20Supplies%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cosmetics" class="product-category">
+            <div class="category-header">
+                <svg class="category-icon" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 3.5C10 2.67157 10.6716 2 11.5 2H12.5C13.3284 2 14 2.67157 14 3.5V4H10V3.5Z" stroke="#E30613" stroke-width="2"/>
+                    <path d="M14 4H21V10C21 11.1046 20.1046 12 19 12H18" stroke="#E30613" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M10 4H3V10C3 11.1046 3.89543 12 5 12H6" stroke="#E30613" stroke-width="2" stroke-linecap="round"/>
+                    <rect x="6" y="8" width="12" height="14" rx="2" stroke="#E30613" stroke-width="2"/>
+                    <path d="M15 13V17" stroke="#E30613" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M12 13V17" stroke="#E30613" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M9 13V17" stroke="#E30613" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <h3>Cosmetics & Personal Care</h3>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="cosmetics">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/ge25267939d0c4ab578f73f83656e0aed82a2792bb1187f7ca475d00c5d84a00b1b748b4f7a6320c0825fefbd286f7a66b712c11464c472de51d27edbec53d79b_1280.jpg" alt="Cosmetics Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Skin Care Products</h4>
+                        <p class="price-range">₹80 - ₹450</p>
+                        <p class="product-description">Quality skin care products including face washes, moisturizers, sunscreens, and more.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Skin%20Care%20Products%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cosmetics">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g3bfddcbfbd3e87f7ef442f72d36606948f01aa6e4864f65da99fa03988321972d0cfc34086f5c435e21a694271856dadcf5087f2e491fb2ccc0b397299a6235c_1280.jpg" alt="Cosmetics Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Hair Care Products</h4>
+                        <p class="price-range">₹70 - ₹350</p>
+                        <p class="product-description">Complete range of hair care products including shampoos, conditioners, oils, and serums.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Hair%20Care%20Products%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cosmetics">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g4d2ca0749d0f9bf122ea8e4166b741824fa7b62d8c43f668e19f578a4497135bce1834a63c118048a10111cbc55063d90a54cb92fddad02af9f4f4ff16092ade_1280.jpg" alt="Cosmetics Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Makeup & Beauty Products</h4>
+                        <p class="price-range">₹100 - ₹800</p>
+                        <p class="product-description">Complete range of makeup and beauty products from popular brands.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Makeup%20%26%20Beauty%20Products%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dryfruits" class="product-category">
+            <div class="category-header">
+                <svg class="category-icon" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 8H19" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 16V8" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="3" y="4" width="18" height="16" rx="2" stroke="#E30613" stroke-width="2"/>
+                    <circle cx="12" cy="16" r="3" stroke="#E30613" stroke-width="2"/>
+                </svg>
+                <h3>Dry Fruits & Gift Packs</h3>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="dryfruits">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g63d03a4069ecb6de2b3126c045d54969fda9889f68b961c1ab9bdafca2a67143a45a18dc4361af952007b41d6c1ff6cc629648167690290c2429b09f60cd4745_1280.jpg" alt="Dry Fruits Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Premium Dry Fruits</h4>
+                        <p class="price-range">₹250 - ₹1200 per kg</p>
+                        <p class="product-description">Premium quality dry fruits including almonds, cashews, pistachios, raisins, and more.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Premium%20Dry%20Fruits%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="dryfruits">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g20b06467f914e00f81f664f7419b6ac7dde1fc0e18845b4375ed5c312cb4983d3c014fc5df5c80fa64f09744cbf7776f99335b042a8b940f51ed2f147de78ceb_1280.jpg" alt="Dry Fruits Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Gift Boxes</h4>
+                        <p class="price-range">₹400 - ₹2000</p>
+                        <p class="product-description">Beautiful gift boxes with assorted dry fruits, sweets, and chocolates for various occasions.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Gift%20Boxes%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="dryfruits">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g8e1d151325a0dfc00f53b79471293eeeba0c8f2d2fa9fd17cc6f79beb0ce00cf6b13ebda06c3008ef2b1f686e4768a328a39ba788530814504a75f37ee35138a_1280.jpg" alt="Dry Fruits Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Festival Hampers</h4>
+                        <p class="price-range">₹700 - ₹3000</p>
+                        <p class="product-description">Special festival hampers with assorted items for occasions like Diwali, Holi, and more.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Festival%20Hampers%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="household" class="product-category">
+            <div class="category-header">
+                <svg class="category-icon" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 22V12H15V22" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>General Household Items</h3>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="household">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/gb68f168153396e11faef6853c872d3b3d8be9d0cf783561c190cc63a43e0d456c1c00887803118e48dc7250128e20b757fe0b717213afbde532792dda439b0d6_1280.jpg" alt="Household Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Cleaning Supplies</h4>
+                        <p class="price-range">₹40 - ₹350</p>
+                        <p class="product-description">Complete range of cleaning supplies including detergents, floor cleaners, and more.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Cleaning%20Supplies%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="household">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g2c5be497b61e3c3611e254d3d9c1f2a165e1504d051017c945c6a6c7938f6a48685fb8c36835a7ece0640517617e0d851262d517344d386cc48a38d59109b729_1280.jpg" alt="Household Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Kitchen Essentials</h4>
+                        <p class="price-range">₹50 - ₹500</p>
+                        <p class="product-description">Essential kitchen items including utensils, cookware, containers, and more.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Kitchen%20Essentials%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="household">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g39ff008b8d0b23db54f78966e305d55aa95155861256b426c3c2c2a5a3ff01eb17673c1ab0c3042434b944e50d1de8e167c6fd5e5b5f4dae5ee35a1f1ba96a6a_1280.jpg" alt="Household Items" class="responsive-img">
+                    </div>
+                    <div class="product-details">
+                        <h4>Home Decor</h4>
+                        <p class="price-range">₹100 - ₹1500</p>
+                        <p class="product-description">Beautiful home decor items to enhance the look of your living space.</p>
+                        <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20Home%20Decor%20items%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-sm whatsapp-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                                <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                            </svg>
+                            Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery-info">
+            <h3>Free Home Delivery</h3>
+            <p>We offer free home delivery for orders above ₹1000 within our service area.</p>
+            <p>For orders below ₹1000, a nominal delivery charge may apply.</p>
+            <a href="contact.html" class="btn btn-secondary">Contact Us for More Details</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="40" height="40" viewBox="0 0 50 50" fill="none">
+                    <path d="M25 0C11.2 0 0 11.2 0 25C0 38.8 11.2 50 25 50C38.8 50 50 38.8 50 25C50 11.2 38.8 0 25 0ZM25 45C13.95 45 5 36.05 5 25C5 13.95 13.95 5 25 5C36.05 5 45 13.95 45 25C45 36.05 36.05 45 25 45Z" fill="#E30613"/>
+                    <path d="M35 17.5H15C13.62 17.5 12.5 18.62 12.5 20V30C12.5 31.38 13.62 32.5 15 32.5H35C36.38 32.5 37.5 31.38 37.5 30V20C37.5 18.62 36.38 17.5 35 17.5ZM33.75 27.5H16.25C15.56 27.5 15 26.94 15 26.25V23.75C15 23.06 15.56 22.5 16.25 22.5H33.75C34.44 22.5 35 23.06 35 23.75V26.25C35 26.94 34.44 27.5 33.75 27.5Z" fill="#E30613"/>
+                </svg>
+                <h3>Shagun Mart</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="catalog.html">Product Catalog</a>
+                <a href="offers.html">Offers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <p>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Near XYZ Landmark, Patna, Bihar
+                </p>
+                <p>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4741 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4018C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0973 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.19 12.85C3.49998 10.2412 2.44824 7.27099 2.12 4.18002C2.09501 3.90363 2.12788 3.62486 2.2165 3.36172C2.30513 3.09859 2.44757 2.85679 2.63477 2.65172C2.82196 2.44665 3.04981 2.28281 3.30379 2.17062C3.55778 2.05843 3.83221 2.00036 4.11 2.00002H7.11C7.59531 1.99566 8.06579 2.16703 8.43376 2.48352C8.80173 2.80002 9.04208 3.23984 9.11 3.72002C9.23662 4.68004 9.47145 5.62273 9.81 6.53002C9.94455 6.88793 9.97366 7.27692 9.8939 7.65089C9.81415 8.02485 9.62886 8.36812 9.36 8.64002L8.09 9.91002C9.51356 12.4136 11.5865 14.4865 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9752 14.1859 16.3491 14.1061C16.7231 14.0263 17.1121 14.0554 17.47 14.19C18.3773 14.5286 19.32 14.7634 20.28 14.89C20.7658 14.9585 21.2098 15.2032 21.5265 15.5775C21.8432 15.9518 22.0122 16.4296 22 16.92Z" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    9065141999, 9334793345
+                </p>
+                <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20items%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="whatsapp-small">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                        <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2005 Shagun Mart. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

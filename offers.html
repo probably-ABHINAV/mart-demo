@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers - Shagun Mart</title>
+    <meta name="description" content="Explore the latest deals and promotions at Shagun Mart. Find discounts on groceries, stationery, cosmetics, and household items.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional-styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#FF3366">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg class="logo" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <path d="M25 0C11.2 0 0 11.2 0 25C0 38.8 11.2 50 25 50C38.8 50 50 38.8 50 25C50 11.2 38.8 0 25 0ZM25 45C13.95 45 5 36.05 5 25C5 13.95 13.95 5 25 5C36.05 5 45 13.95 45 25C45 36.05 36.05 45 25 45Z" fill="var(--color-primary)"/>
+                <path d="M35 17.5H15C13.62 17.5 12.5 18.62 12.5 20V30C12.5 31.38 13.62 32.5 15 32.5H35C36.38 32.5 37.5 31.38 37.5 30V20C37.5 18.62 36.38 17.5 35 17.5ZM33.75 27.5H16.25C15.56 27.5 15 26.94 15 26.25V23.75C15 23.06 15.56 22.5 16.25 22.5H33.75C34.44 22.5 35 23.06 35 23.75V26.25C35 26.94 34.44 27.5 33.75 27.5Z" fill="var(--color-primary)"/>
+            </svg>
+            <h1>Shagun Mart</h1>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="catalog.html" class="nav__link">Product Catalog</a></li>
+                <li class="nav__item"><a href="offers.html" class="nav__link active">Offers</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="offers-hero">
+            <div class="offers-hero__content">
+                <h2 class="text-gradient-primary">Special Offers & Promotions</h2>
+                <p class="subtitle">Discover amazing deals and discounts</p>
+            </div>
+        </section>
+
+        <section class="offers-section">
+            <div class="offers-container">
+                <!-- Featured Offer -->
+                <div class="offer-card featured-offer glass-card animate-on-scroll">
+                    <div class="offer-badge">Featured</div>
+                    <div class="offer-content">
+                        <h3>Summer Special</h3>
+                        <p class="offer-description">Get 15% off on all personal care products and cosmetics this summer season!</p>
+                        <div class="offer-details">
+                            <p><strong>Valid till:</strong> August 31, 2025</p>
+                            <p><strong>Minimum purchase:</strong> ₹500</p>
+                        </div>
+                        <a href="catalog.html#cosmetics" class="btn btn-primary">Shop Now</a>
+                    </div>
+                    <div class="offer-image">
+                        <img src="https://pixabay.com/get/gccd59dfb7e3cf88dad6b00ae3e22ef7b5172e2989e2f43f53c3ab10055c3e686639183b6d3a7a6fa1ad7acae9cd55b06bd8f4a09dc4a19a644e5c7d84e2c97f6_1280.jpg" alt="Summer Special Offer" class="responsive-img">
+                    </div>
+                </div>
+
+                <!-- Regular Offers -->
+                <div class="offers-grid">
+                    <div class="offer-card glass-card animate-on-scroll">
+                        <div class="offer-badge discount">25% OFF</div>
+                        <div class="offer-content">
+                            <h3>Stationery Sale</h3>
+                            <p class="offer-description">Back to school special! Get 25% off on all stationery items.</p>
+                            <div class="offer-details">
+                                <p><strong>Valid till:</strong> July 15, 2025</p>
+                            </div>
+                            <a href="catalog.html#stationery" class="btn btn-sm btn-secondary">View Products</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-card glass-card animate-on-scroll">
+                        <div class="offer-badge discount">10% OFF</div>
+                        <div class="offer-content">
+                            <h3>Grocery Bundle</h3>
+                            <p class="offer-description">Save 10% when you buy any 5 grocery items from our premium selection.</p>
+                            <div class="offer-details">
+                                <p><strong>Valid till:</strong> Ongoing offer</p>
+                            </div>
+                            <a href="catalog.html#grocery" class="btn btn-sm btn-secondary">View Products</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-card glass-card animate-on-scroll">
+                        <div class="offer-badge">Buy 1 Get 1</div>
+                        <div class="offer-content">
+                            <h3>Gift Pack Special</h3>
+                            <p class="offer-description">Buy one premium dry fruit gift pack and get another one at half price!</p>
+                            <div class="offer-details">
+                                <p><strong>Valid till:</strong> September 30, 2025</p>
+                            </div>
+                            <a href="catalog.html#dryfruits" class="btn btn-sm btn-secondary">View Products</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-card glass-card animate-on-scroll">
+                        <div class="offer-badge">Limited Time</div>
+                        <div class="offer-content">
+                            <h3>Household Essentials</h3>
+                            <p class="offer-description">Flat ₹100 off on purchases above ₹1,000 on all household products.</p>
+                            <div class="offer-details">
+                                <p><strong>Valid till:</strong> June 30, 2025</p>
+                            </div>
+                            <a href="catalog.html#household" class="btn btn-sm btn-secondary">View Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="weekly-deals">
+            <h2 class="section-title">Weekly Deals</h2>
+            <div class="weekly-deals-container">
+                <div class="weekly-deal-item glass-card animate-on-scroll">
+                    <div class="weekly-deal-day">Monday</div>
+                    <div class="weekly-deal-content">
+                        <h3>10% off Fresh Produce</h3>
+                        <p>Start your week with fresh vegetables and fruits at discounted prices.</p>
+                    </div>
+                </div>
+
+                <div class="weekly-deal-item glass-card animate-on-scroll">
+                    <div class="weekly-deal-day">Wednesday</div>
+                    <div class="weekly-deal-content">
+                        <h3>Mid-Week Special</h3>
+                        <p>15% off all dairy products and breakfast essentials.</p>
+                    </div>
+                </div>
+
+                <div class="weekly-deal-item glass-card animate-on-scroll">
+                    <div class="weekly-deal-day">Friday</div>
+                    <div class="weekly-deal-content">
+                        <h3>Weekend Prep</h3>
+                        <p>Special discounts on snacks, beverages, and party essentials.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership-offer">
+            <div class="membership-content animate-on-scroll">
+                <h2>Join Our Loyalty Program</h2>
+                <p>Become a premium member and enjoy exclusive benefits:</p>
+                <ul class="membership-benefits">
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        5% discount on all purchases
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Early access to promotions and new products
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Free home delivery on all orders
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Birthday month special gift
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-tertiary">Inquire Now</a>
+            </div>
+        </section>
+
+        <section class="offers-cta">
+            <div class="cta-card glass-card animate-on-scroll">
+                <h2>Ready to Order?</h2>
+                <p>Place your order now and take advantage of our special offers and free delivery on orders above ₹1000.</p>
+                <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20items%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="btn btn-primary whatsapp-btn btn-glow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                        <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                    </svg>
+                    Order Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="40" height="40" viewBox="0 0 50 50" fill="none">
+                    <path d="M25 0C11.2 0 0 11.2 0 25C0 38.8 11.2 50 25 50C38.8 50 50 38.8 50 25C50 11.2 38.8 0 25 0ZM25 45C13.95 45 5 36.05 5 25C5 13.95 13.95 5 25 5C36.05 5 45 13.95 45 25C45 36.05 36.05 45 25 45Z" fill="var(--color-primary)"/>
+                    <path d="M35 17.5H15C13.62 17.5 12.5 18.62 12.5 20V30C12.5 31.38 13.62 32.5 15 32.5H35C36.38 32.5 37.5 31.38 37.5 30V20C37.5 18.62 36.38 17.5 35 17.5ZM33.75 27.5H16.25C15.56 27.5 15 26.94 15 26.25V23.75C15 23.06 15.56 22.5 16.25 22.5H33.75C34.44 22.5 35 23.06 35 23.75V26.25C35 26.94 34.44 27.5 33.75 27.5Z" fill="var(--color-primary)"/>
+                </svg>
+                <h3>Shagun Mart</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="catalog.html">Product Catalog</a>
+                <a href="offers.html">Offers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <p>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Near XYZ Landmark, Patna, Bihar
+                </p>
+                <p>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4741 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4018C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0973 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.19 12.85C3.49998 10.2412 2.44824 7.27099 2.12 4.18002C2.09501 3.90363 2.12788 3.62486 2.2165 3.36172C2.30513 3.09859 2.44757 2.85679 2.63477 2.65172C2.82196 2.44665 3.04981 2.28281 3.30379 2.17062C3.55778 2.05843 3.83221 2.00036 4.11 2.00002H7.11C7.59531 1.99566 8.06579 2.16703 8.43376 2.48352C8.80173 2.80002 9.04208 3.23984 9.11 3.72002C9.23662 4.68004 9.47145 5.62273 9.81 6.53002C9.94455 6.88793 9.97366 7.27692 9.8939 7.65089C9.81415 8.02485 9.62886 8.36812 9.36 8.64002L8.09 9.91002C9.51356 12.4136 11.5865 14.4865 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9752 14.1859 16.3491 14.1061C16.7231 14.0263 17.1121 14.0554 17.47 14.19C18.3773 14.5286 19.32 14.7634 20.28 14.89C20.7658 14.9585 21.2098 15.2032 21.5265 15.5775C21.8432 15.9518 22.0122 16.4296 22 16.92Z" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    9065141999, 9334793345
+                </p>
+                <a href="https://wa.me/919065141999?text=Hi%2C%20I%27d%20like%20to%20order%20items%20from%20Shagun%20Mart%20website.%20Please%20assist%20me." class="whatsapp-small">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" fill="#25D366"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 19C15.866 19 19.0003 15.866 19.0003 12C19.0003 8.13401 15.866 5 12.0003 5C8.13428 5 5.00028 8.13401 5.00028 12C5.00028 13.5822 5.48315 15.0523 6.32373 16.2542L5.49114 18.5065C5.35665 18.839 5.66229 19.1446 5.99478 19.0101L8.24717 18.1775C9.4491 19.0181 10.9192 19.5 12.0003 19Z" fill="#25D366"/>
+                        <path d="M9.41731 8.99957C9.27679 8.64788 9.16452 8.63948 9.06161 8.63214C8.97774 8.62584 8.88083 8.62584 8.78392 8.62584C8.68702 8.62584 8.53345 8.67303 8.40598 8.8105C8.2785 8.94798 7.89148 9.31163 7.89148 10.0527C7.89148 10.7938 8.42023 11.5056 8.49105 11.6025C8.56186 11.6995 9.48962 13.181 10.9514 13.7863C12.1605 14.2853 12.4132 14.1901 12.6837 14.1586C12.9543 14.1272 13.5778 13.7951 13.7341 13.4591C13.8903 13.1231 13.8903 12.835 13.8549 12.7695C13.8194 12.7048 13.7225 12.6709 13.5778 12.6037C13.4331 12.5365 12.6919 12.1728 12.5644 12.1256C12.4369 12.0784 12.3401 12.055 12.2432 12.1997C12.1462 12.3436 11.8599 12.6709 11.7787 12.7679C11.6967 12.8656 11.6155 12.8783 11.4709 12.8112C11.3262 12.7432 10.8431 12.5876 10.2677 12.0784C9.82501 11.688 9.52647 11.2071 9.44447 11.0624C9.36246 10.9177 9.43538 10.8412 9.50514 10.7718C9.56769 10.7096 9.64235 10.6098 9.71005 10.5285C9.77669 10.4473 9.80014 10.3908 9.84732 10.2939C9.89451 10.197 9.87107 10.1157 9.83593 10.0486C9.80014 9.98142 9.51475 9.23677 9.41731 8.99957Z" fill="white"/>
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2005 Shagun Mart. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
